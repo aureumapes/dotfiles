@@ -55,6 +55,9 @@ handle_extension() {
             atool --list -- "${FILE_PATH}" && exit 5
             bsdtar --list --file "${FILE_PATH}" && exit 5
             exit 1;;
+	cndl)
+	    /usr/bin/cndlh /mnt/Linux-HDD/Development/gopath/src/github.com/aureumapes/candle/examples/map.cndl && exit 5
+	    exit 1;;
         rar)
             ## Avoid password prompt by providing empty password
             unrar lt -p- -- "${FILE_PATH}" && exit 5
