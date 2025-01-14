@@ -1,0 +1,6 @@
+
+[Default Applications]
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+inode/directory=ranger.desktop
+x-scheme-handler/nc=com.nextcloud.desktopclient.nextcloud.desktop
+x-scheme-handler/discord-460807638964371468=discord-460807638964371468.desktop

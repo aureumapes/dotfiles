@@ -1,0 +1,89 @@
+{
+  "height": 30,
+  "spacing": 4,
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": " ",
+    "format-disconnected": " ",
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+  "custom/weather": {
+    "format": "{}",
+    "tooltid": true,
+    "interval": 3600,
+    "exec": "wttrbar --nerd --location Brühl --custom-indicator '{ICON}  {FeelsLikeC}/{temp_C}°C {areaName}'",
+    "return-type": "json"
+  },
+  "custom/power": {
+    "format": "",
+    "on-click":"wlogout -b 2"    
+  },
+  "clock": {
+    "format": "{:%a, %d. %b %R}",
+    "on-click": "swaync-client -t"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        " "
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "tray": {
+    "icon-size": 24,
+    "spacing": 10
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "rewrite": {
+                     "(.*) Firefox Developer Edition": "Firefox"
+                }
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": " ",
+      "active": " ",
+      "urgent": " "
+    },
+    "persistent-workspaces": {
+      "DP-3": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "HDMI-A-1": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "custom/weather",
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "custom/power"
+  ]
+}

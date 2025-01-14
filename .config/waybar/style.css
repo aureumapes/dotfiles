@@ -1,0 +1,112 @@
+* {
+	background: transparent;
+	border-radius: 50px;
+	font-family: "MesloLGS Nerd Font Mono Bold";
+}
+
+menu, tooltip {
+	border-radius:10px;
+	color:#d8dee9;
+}
+
+menu, tooltip, 
+#clock, #custom-weather, #window, 
+#pulseaudio, #network, #tray, #custom-power {
+	background: #292e38;
+}
+
+menuitem {
+	border-radius: 10px;
+	border: 1px solid #292e38;
+}
+
+menuitem:hover {
+	border: 1px solid white;
+}
+
+#workspaces {
+	background: rgba(41, 46, 56, 0.2);
+	margin: 5px 3px 5px 12px;
+	padding: 0 1px;
+	border-radius: 15px;
+	border: 0;
+	font-style: normal;
+	color: #15161e;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	margin: 4px 3px;
+	border-radius: 15px;
+	border: 0;
+	color: #15161e;
+	background-color: #d08770;
+	transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+	color: #ebcb8b;
+	background: #ebcb8b;
+	border-radius: 15px;
+	min-width: 40px;
+	opacity: 1.0;
+	transition: all 0.3s ease-in-out;
+}
+
+#clock, 
+#custom-weather, 
+#custom-appmenu,
+#custom-power,
+#pulseaudio, 
+#network, 
+#tray,
+#window {
+	margin: 2px 5px 0 5px;
+	padding: 3px 10px;
+	border: 3px solid;
+	border-radius:50px;
+	min-width: 20px
+}
+
+#clock {
+	border-color: #ebcb8b;
+	color: #ebcb8b;
+}
+
+#custom-power {
+	padding-left: 7.5px;
+}
+
+#custom-weather {
+	padding-bottom: 1.9px;
+}
+
+#custom-weather, #custom-power {
+	border-color: #8fbcbb;
+	color: #8fbcbb;
+}
+
+#custom-appmenu:hover {
+	border-color: #ebcb8b;
+}
+
+#pulseaudio {
+	border-color: #d08770;
+	color: #d08770;
+}
+
+#network, #tray, #window {
+	border-color: #a3be8c;
+	color: #a3be8c;
+}
+
+#network.disconnected {
+	border-color: #bf616a;
+	color: #bf616a;
+}
+
+#window {
+	border-color: #ebcb8b;
+	color: #ebcb8b;
+}
+

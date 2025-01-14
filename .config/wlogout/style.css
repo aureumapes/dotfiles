@@ -1,0 +1,29 @@
+window {
+	background-color: rgba(12, 12, 12, 0.9);
+}
+
+button {
+    border-radius: 40px;
+    border-width: 20px;
+    border-style: solid;
+    background-color: #292e38;
+    border-style: solid;
+    border-width: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    color: #d4bff9;
+    font-family: 'Hack Nerd Font'
+}
+
+button:focus, button:active, button:hover {
+	border-color: #8fbcbb;
+}
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
