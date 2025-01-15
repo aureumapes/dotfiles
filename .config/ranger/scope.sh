@@ -56,7 +56,7 @@ handle_extension() {
             bsdtar --list --file "${FILE_PATH}" && exit 5
             exit 1;;
 	cndl)
-	    /usr/bin/cndlh /mnt/Linux-HDD/Development/gopath/src/github.com/aureumapes/candle/examples/map.cndl && exit 5
+	    /usr/bin/cndlh $FILE_PATH && exit 0
 	    exit 1;;
         rar)
             ## Avoid password prompt by providing empty password
