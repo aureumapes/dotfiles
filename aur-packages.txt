@@ -1,0 +1,11 @@
+hyprland
+hyprpaper
+swaync
+zsh
+git
+kitty
+ranger
+waybar
+wlogout
+wttrbar
+firefox-developer-edition
