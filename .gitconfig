@@ -1,0 +1,10 @@
+[user]
+	name = AureumApes
+	email = janundartur@gmail.com
+	signingkey = /home/artur/.ssh/gh_auth.pub
+[gpg]
+	format = ssh
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://aur@aur.archlinux.org/"]
+	insteadOd = https://aur.archlinux.org
