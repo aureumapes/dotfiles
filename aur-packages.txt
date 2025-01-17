@@ -8,4 +8,5 @@ ranger
 waybar
 wlogout
 wttrbar
+bibata-cursor-theme-bin
 firefox-developer-edition
